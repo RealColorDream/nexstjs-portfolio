@@ -1,6 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from "next/image";
+
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState('home');
@@ -46,7 +48,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="shrink-0">
             <span className="text-xl font-bold text-zinc-900 dark:text-white">
-              Portfolio
+              <Image src={"/logos.png"} alt={"Lambda logo from valve (λ)"} width={30} height={30}></Image>
             </span>
           </div>
           <div className="hidden md:block">
