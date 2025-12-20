@@ -34,10 +34,10 @@ export default function Navbar() {
   };
 
   const navItems = [
-    { id: 'home', label: 'Accueil' },
-    { id: 'work', label: 'Expérience' },
-    { id: 'skills', label: 'Compétences' },
-    { id: 'projects', label: 'Projets' },
+    { id: 'home', label: 'Home' },
+    { id: 'work', label: 'Work-experiences' },
+    { id: 'skills', label: 'Skills' },
+    { id: 'projects', label: 'Projects' },
   ];
 
   return (
