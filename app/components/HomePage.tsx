@@ -15,17 +15,13 @@ export default function HomePage() {
             <div className="max-w-4xl w-full">
                 <div className="text-center space-y-8">
                     <div className="flex items-center justify-between">
-                        <Image
-                            src="/animation.gif"
-                            alt="Illustration Développeur"
-                            width={1920}
-                            height={720}
-                            priority
-                            unoptimized
-                        />
+                        <video muted={true} loop={true} preload={"metadata"} autoPlay={true} controls={false}>
+                            <source src={"/animation.webm"} type={"video/webm"} />
+                        </video>
+
                     </div>
                     <p className="text-xl sm:text-2xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-                        Passionné par la création d&apos;expériences web modernes et performantes
+                        (I really like Valve games)
                     </p>
                     <div className="flex gap-4 justify-center">
                         <button
