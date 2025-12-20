@@ -7,16 +7,16 @@ interface WorkExperience {
 
 const experiences: WorkExperience[] = [
   {
-    title: 'Développeur Web',
-    company: 'Entreprise XYZ',
-    period: '2023 - Présent',
-    description: 'Développement d\'applications web modernes avec React, Next.js et Node.js. Collaboration avec des équipes pluridisciplinaires pour livrer des projets de qualité.',
+    title: 'Internship in Web Development',
+    company: 'IEMN  (CNRS)',
+    period: '10 months',
+    description: 'Development of a web application for managing scientific projects using Python, Flask, and PostgreSQL.',
   },
   {
-    title: 'Développeur Frontend',
-    company: 'Startup ABC',
-    period: '2021 - 2023',
-    description: 'Création d\'interfaces utilisateur réactives et accessibles. Optimisation des performances et amélioration de l\'expérience utilisateur.',
+    title: 'BUT Informatique',
+    company: 'IUT de Lens',
+    period: '2023 - 2026',
+    description: 'Pursuing a Bachelor of Technology in Computer Science.',
   },
 ];
 
@@ -25,7 +25,7 @@ export default function Work() {
     <section id="work" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20">
       <div className="max-w-4xl w-full">
         <h2 className="text-4xl sm:text-5xl font-bold text-zinc-900 dark:text-white mb-12 text-center">
-          Expérience Professionnelle
+            Work Experiences
         </h2>
         <div className="space-y-8">
           {experiences.map((experience, index) => (
