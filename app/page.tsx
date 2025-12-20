@@ -1,10 +1,13 @@
-import Navbar from './components/Navbar';
-import Work from './components/Work';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Image from 'next/image';
-import HomePage from "@/app/components/HomePage";
-import Footer from "@/app/components/Footer";
+'use client'
+import dynamic from 'next/dynamic'
+
+const Navbar = dynamic(() => import('./components/Navbar'))
+const Work = dynamic(() => import('./components/Work'))
+const Skills = dynamic(() => import('./components/Skills'))
+const Projects = dynamic(() => import('./components/Projects'))
+const HomePage = dynamic(() => import('./components/HomePage'))
+const Footer = dynamic(() => import('./components/Footer'))
+
 
 export default function Home() {
     return (
