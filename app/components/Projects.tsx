@@ -13,7 +13,7 @@ const projects: Project[] = [
   {
     title: 'Marathon Web 2024 🐟',
     description: 'Marathon Web is a school project where you have to create a website during a 36-hour interval. The goal is to create a website with a given subject and a team of 8 people.',
-    technologies: ['PHP'],
+    technologies: ['PHP', 'HTML', 'CSS'],
     gradient: 'from-blue-500 to-purple-600',
     image: '/marathon1.png',
     link: 'https://github.com/RealColorDream/marathon-web',
@@ -36,9 +36,10 @@ const projects: Project[] = [
   },
   {
     title: 'Gamedle 🎮',
-    description: 'A simple guessing game about video game covers and more. ',
-    technologies: ['React Native', 'Expo', 'Firebase'],
-    gradient: 'from-pink-500 to-purple-600',
+    description: 'A simple guessing game about video game covers and more. The game is written in GoLang and use the gin-gonic to display an html page with the game. Most importantly, it uses the IGDB API to get the game covers and informations.',
+    technologies: ['Golang', "HTML", "CSS"],
+    gradient: 'from-blue-300 to-blue-600',
+    image: '/igdb.png',
     link: 'https://github.com/RealColorDream/GoGamedle',
   },
 ];
@@ -47,6 +48,8 @@ const techColors: Record<string, string> = {
   'Next.js': 'bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200',
   'TypeScript': 'bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200',
   'PHP': 'bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200',
+  'HTML': 'bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200',
+  'CSS': 'bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200',
   'Stripe': 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200',
   'React': 'bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200',
   'Node.js': 'bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200',
@@ -58,6 +61,7 @@ const techColors: Record<string, string> = {
   'React Native': 'bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200',
   'Expo': 'bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200',
   'Firebase': 'bg-cyan-100 dark:bg-cyan-900 text-cyan-800 dark:text-cyan-200',
+  'Golang': 'bg-cyan-100 dark:bg-cyan-900 text-cyan-800 dark:text-cyan-200',
 };
 
 export default function Projects() {
@@ -106,7 +110,7 @@ export default function Projects() {
                   href={project.link}
                   className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
                 >
-                  Voir le projet →
+                  See on Github →
                 </a>
               </div>
             </div>
