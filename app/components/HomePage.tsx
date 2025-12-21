@@ -28,13 +28,13 @@ export default function HomePage() {
                             onClick={() => scrollToSection('projects')}
                             className="px-8 py-3 bg-zinc-900 dark:bg-white text-white dark:text-black rounded-lg font-medium hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-colors"
                         >
-                            Voir mes projets
+                            See my projects
                         </button>
                         <button
                             onClick={() => scrollToSection('work')}
                             className="px-8 py-3 border-2 border-zinc-900 dark:border-white text-zinc-900 dark:text-white rounded-lg font-medium hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors"
                         >
-                            Mon expérience
+                            Work Experiences
                         </button>
                     </div>
                 </div>
