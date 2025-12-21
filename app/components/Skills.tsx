@@ -12,6 +12,13 @@ const skillsData: SkillCategory[] = [
   { category: 'Soft Skills', skills: ['Communication', 'Team Work', 'Problem solving', 'Project management'] },
 ];
 
+const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+};
+
 export default function Skills() {
   return (
     <section id="skills" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20">
@@ -42,6 +49,16 @@ export default function Skills() {
             </div>
           ))}
         </div>
+          <div className="flex gap-4 justify-center mt-12">
+              <button
+                  onClick={() => scrollToSection('projects')}
+                  className="px-8 py-3 bg-zinc-900 dark:bg-white text-white dark:text-black rounded-lg font-medium hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-colors"
+              >
+                  Next
+              </button>
+
+          </div>
+
       </div>
     </section>
   );
