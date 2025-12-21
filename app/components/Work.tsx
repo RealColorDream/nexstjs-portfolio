@@ -21,6 +21,13 @@ const experiences: WorkExperience[] = [
 ];
 
 export default function Work() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="work" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20">
       <div className="max-w-4xl w-full">
@@ -47,6 +54,15 @@ export default function Work() {
               </p>
             </div>
           ))}
+          <div className="flex gap-4 justify-center">
+            <button
+                onClick={() => scrollToSection('skills')}
+                className="px-8 py-3 bg-zinc-900 dark:bg-white text-white dark:text-black rounded-lg font-medium hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-colors"
+            >
+              Next
+            </button>
+
+          </div>
         </div>
       </div>
     </section>
