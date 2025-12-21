@@ -10,8 +10,8 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio - Développeur Web",
-  description: "Portfolio présentant mon expérience professionnelle, mes compétences techniques et mes projets personnels",
+  title: "Portfolio - Web Developer",
+  description: "Portfolio of a web developer showcasing projects and skills.",
 };
 
 export default function RootLayout({
