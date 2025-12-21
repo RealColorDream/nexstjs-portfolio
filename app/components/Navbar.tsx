@@ -48,7 +48,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="shrink-0">
             <span className="text-xl font-bold text-zinc-900 dark:text-white">
-              <Image src={"/logos.png"} alt={"Lambda logo from valve (λ)"} width={30} height={30}></Image>
+              <Image src={"/logos-2.png"} alt={"Lambda logo from valve (λ)"} width={30} height={30}></Image>
             </span>
           </div>
           <div className="hidden md:block">
