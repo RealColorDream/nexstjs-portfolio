@@ -30,7 +30,7 @@ export default function Footer() {
                     </a>
                 </div>
                 <p className="text-sm text-zinc-500 dark:text-zinc-500 mt-8">
-                    © 2025 Portfolio. Tous droits réservés.
+                    &copy; {new Date().getFullYear()}. All rights reserved.
                 </p>
             </div>
         </footer>
