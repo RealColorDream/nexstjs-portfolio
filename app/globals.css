@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --accent: #6366f1;
 }
 
 @theme inline {
@@ -35,4 +36,40 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+#header__logo::after {
+  content: '';
+  background: repeating-linear-gradient(90deg, blueviolet, blueviolet 2px, transparent 0, transparent 8px);
+  display: block;
+  width: 100%;
+  margin-left: 20px;
+  right: 10px;
+}
+
+/* Ajout du style pour la barre de navigation personnalisée */
+.bar-navbar {
+  position: relative;
+}
+.bar-navbar::before {
+  content: "";
+  background: repeating-linear-gradient(90deg,var(--accent),var(--accent) 2px,transparent 0,transparent 10px);
+  display: block;
+  width: 100%;
+  height: 0.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 10px;
+}
+.bar-navbar::after {
+  content: "";
+  background: repeating-linear-gradient(90deg,var(--accent),var(--accent) 2px,transparent 0,transparent 10px);
+  display: block;
+  width: 100%;
+  height: 0.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 10px;
 }
